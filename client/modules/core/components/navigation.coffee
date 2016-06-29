@@ -4,8 +4,8 @@ React = require 'react'
 Navigation = ()->
   div {},
     b {}, "Navigation: "
-    a href:"/", "Home"
+    a href: "/", "Home"
     " | "
-    a href:"/new-post", "New Post"
+    a href: "/new-post", "New Post"
 
 module.exports = Navigation

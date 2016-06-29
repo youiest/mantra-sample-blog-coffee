@@ -1,4 +1,5 @@
 import {createApp} from 'mantra-core';
+import aboutModule from "./modules/about";
 import initContext from './configs/context';
 
 // modules
@@ -12,4 +13,5 @@ const context = initContext();
 const app = createApp(context);
 app.loadModule(coreModule);
 app.loadModule(commentsModule);
+app.loadModule(aboutModule);
 app.init();
