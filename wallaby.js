@@ -7,6 +7,10 @@ module.exports = function (wallaby) {
 
   return {
     files: [
+      // these need to include .coffee files
+      // but result in wallaby 'module not found' errors
+      // https://github.com/wallabyjs/wallaby-coffeescript-sample
+      // above works with coffee, but not here, TODO FIXME
       'client/modules/**/components/*.js',
       'client/modules/**/actions/*.js',
       'client/modules/**/containers/*.js',
